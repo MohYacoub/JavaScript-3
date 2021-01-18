@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop watch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* .display-group #display2 {
+        font-size: 14px;
+        color: rgb(133, 133, 133);
+      } */
+      .display-group {
+        padding: 5px;
+        margin: 10px;
+        max-width: 100px;
+        border: 1px black solid;
+      }
+      .btnGroup {
+        margin-left: 10px;
+      }
+      .btnGroup button {
+        font-size: x-small;
+      }
+      #pauseBtn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>The Watch</h2>
+      <div class="display-group">
+        <!-- <div id="display2">HH:MM:SS:MS</div> -->
+        <div id="display">00:00:00:00</div>
+      </div>
+
+      <div class="btnGroup">
+        <button id="startBtn" class="btn btn-outline-primary">Start</button>
+        <button id="pauseBtn" class="btn btn-outline-warning">Pause</button>
+        <button id="resetBtn" class="btn btn-outline-danger">Reset</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
